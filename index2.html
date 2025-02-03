@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="bg-green-200 text-green-900 flex justify-between items-center shadow-lg sticky top-0 z-50">
+        <!-- <h1 class="text-2xl italic font-bold uppercase hover:text-blue-500">Piano!</h1> -->
+        <img src="images.jpg" class="w-8 rounded-full ml-2" alt="">
+        <ul class="flex px-28 py-5 space-x-11 justify-end">
+            <li><a href="#home" class="text-gray-700 hover:text-blue-500 uppercase">Home</a></li>
+            <li><a href="#features" class="text-gray-700 hover:text-blue-500 uppercase">Features</a></li>
+            <li><a href="#testimonials" class="text-gray-700 hover:text-blue-500 uppercase">Testimonials</a></li>
+            <li><a href="#pricing" class="text-gray-700 hover:text-blue-500 uppercase">Pricing</a></li>
+            <li><a href="#contact" class="text-gray-700 hover:text-blue-500 uppercase">Contact</a></li>
+            <button id="contact-button" class="bg-green-900 hover:bg-green-200 hover:text-green-900 text-white font-bold py-2 px-4 rounded-full mt-5 animate-pulse">Get Started</button>
+
+        </ul>                                                              
+    </nav>
+    <!-- Hero Section -->
+        <section id="home" class="w-full h-screen bg-cover bg-center relative" style="background-image: url('planner-7108489_1280.jpg')">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="flex items-center justify-center h-full">
+                <div class="text-center text-white">
+                    <!-- <p class="text-4xl font-bold text-green-900 uppercase">PIANO!</p> -->
+                    <h1 class="text-4xl font-bold text-green-900 uppercase">Bold Strokes, Smooth Performance!</h1>
+                    <p class="text-lg text-green-950 uppercase">Unleash Your Creativity with Every Stroke!</p>
+                    <button id="#contact" class="bg-green-900 hover:bg-green-200 hover:text-green-900 text-white font-bold py-2 px-4 rounded-full mt-5 animate-pulse">Get Started</button>
+                </div>
+            </div>
+        </section>
+     <!-- Features section -->
+     <section id="features" class="py-16 text-center ">
+        <div class="container mx-auto px-4"> 
+            <h2 class="uppercase text-4xl text-green-900 font-bold mb-4 hover:text-blue-500">Features</h2>
+            <p class="text-lg text-gray-700">
+                The Piano Marker delivers bold and vibrant ink for rich, smudge-proof, and professional results. Its smooth and effortless flow ensures seamless strokes with a comfortable grip, perfect for any use. Designed for long-lasting durability, it resists fading and works on multiple surfaces with precision.
+            </p>
+            <div class="card flex flex-wrap justify-center mt-8">
+                <div class="p-4 w-1/3 border-r-2  hover:bg-blue-100 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                    <img src="technology-3472295_1280.jpg" class="w-20 h-20 rounded-full mx-auto " alt="">
+                    <h3 class="text-2xl text-green-900 font-bold mt-4">Bold Strokes</h3>
+                    <p class="text-gray-700 mt-4">The Piano Marker delivers bold and vibrant ink for rich, smudge-proof, and professional results.</p>
+                </div>
+                <div class="p-4 w-1/3 border-r-2 hover:bg-blue-100 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                    <img src="communicate-4887137_1280.jpg" class="w-20 h-20 rounded-full mx-auto" alt="">
+                    <h3 class="text-2xl text-green-900 font-bold mt-4">Smooth Performance</h3>
+                    <p class="text-gray-700 mt-4">Its smooth and effortless flow ensures seamless strokes with a comfortable grip, perfect for any use.</p>
+                </div>
+                <div class="p-4 w-1/3 border-r-2 hover:bg-blue-100 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                    <img src="a.jpg" class="w-20 h-20 rounded-full mx-auto" alt="">
+                    <h3 class="text-2xl text-green-900 font-bold mt-4">Long-Lasting Durability</h3>
+                    <p class="text-gray-700 mt-4">Designed for long-lasting durability, it resists fading and works on multiple surfaces with precision.</p>
+                </div>
+                <div class="card flex flex-wrap justify-center mt-8 ">
+                    <div class="p-4 w-1/3 border-r-2 hover:bg-blue-100 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <img src="feather-1996320_1280.jpg" class="w-20 h-20 rounded-full mx-auto " alt="">
+                        <h3 class="text-2xl text-green-900 font-bold mt-4">Bold Strokes</h3>
+                        <p class="text-gray-700 mt-4">The Piano Marker delivers bold and vibrant ink for rich, smudge-proof, and professional results.</p>
+                    </div>
+                    <div class="p-4 w-1/3 border-r-2 hover:bg-blue-100 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <img src="highlighter-5427198_1280.jpg" class="w-20 h-20 rounded-full mx-auto" alt="">
+                        <h3 class="text-2xl text-green-900 font-bold mt-4">Smooth Performance</h3>
+                        <p class="text-gray-700 mt-4">Its smooth and effortless flow ensures seamless strokes with a comfortable grip, perfect for any use.</p>
+                    </div>
+                    <div class="p-4 w-1/3 border-r-2 hover:bg-blue-100 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <img src="images.jpg" class="w-20 h-20 rounded-full mx-auto" alt="">
+                        <h3 class="text-2xl text-green-900 font-bold mt-4">Long-Lasting Durability</h3>
+                        <p class="text-gray-700 mt-4">Designed for long-lasting durability, it resists fading and works on multiple surfaces with precision.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--Clients Reviews -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-green-900">Customer Reviews</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <div class="review-item p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 animate-fade-in w-72">
+          <img src="images.jpg" alt="Customer photo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <p class="text-xl font-semibold text-green-700">John Doe</p>
+          <p class="text-gray-500">"Absolutely amazing experience! This product exceeded my expectations and helped me improve my workflow!"</p>
+        </div>
+        <div class="review-item p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 animate-fade-in w-72">
+          <img src="images.jpg" alt="Customer photo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <p class="text-xl font-semibold text-green-700">Jane Smith</p>
+          <p class="text-gray-500">"Incredible service and support. I love how intuitive everything is and the results are just as promised!"</p>
+        </div>
+        <div class="review-item p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 animate-fade-in w-72">
+          <img src="images.jpg" alt="Customer photo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <p class="text-xl font-semibold text-green-700">Sarah Lee</p>
+          <p class="text-gray-500">"This has made such a difference in my day-to-day routine. Highly recommend it to anyone looking to improve productivity!"</p>
+        </div>
+        <div class="review-item p-6 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105 animate-fade-in w-72">
+          <img src="images.jpg" alt="Customer photo" class="w-24 h-24 rounded-full mx-auto mb-4">
+          <p class="text-xl font-semibold text-green-900">Michael Brown</p>
+          <p class="text-gray-500">"I can’t imagine my work without this tool. It’s fast, reliable, and the support team is always there when I need them."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- price -->
+    <div id="pricing" class="flex flex-col items-center py-12 bg-gray-100">
+    <h2 class="text-3xl text-green-900 font-bold mb-8">Price of Product</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full px-4">
+      <div class="p-6 rounded-2xl shadow-lg bg-white transform transition-all duration-300 hover:scale-105 border-2 border-green-300">
+        <h3 class="text-2xl font-semibold mb-3">Basic</h3>
+        <p class="text-xl font-bold mb-4">$19/month</p>
+        <ul class="mb-6 space-y-2 text-gray-700">
+          <li>✔ Access to basic sounds</li>
+          <li>✔ Standard pen sensitivity</li>
+          <li>✔ Email support</li>
+        </ul>
+        <button class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
+          Choose 
+        </button>
+      </div>
+  
+      <div class="p-6 rounded-2xl shadow-lg bg-white transform transition-all duration-300 hover:scale-105 border-2 border-green-900">
+        <div class="text-white bg-green-500 text-sm font-semibold px-3 py-1 rounded-full inline-block mb-3">
+          Most Popular
+        </div>
+        <h3 class="text-2xl font-semibold mb-3">Pro</h3>
+        <p class="text-xl font-bold mb-4">$39/month</p>
+        <ul class="mb-6 space-y-2 text-gray-700">
+          <li>✔ Full sound library</li>
+          <li>✔ Advanced pen pressure control</li>
+          <li>✔ Priority support</li>
+        </ul>
+        <button class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
+          Choose 
+        </button>
+      </div>
+  
+      <div class="p-6 rounded-2xl shadow-lg bg-white transform transition-all duration-300 hover:scale-105 border-2 border-green-300">
+        <h3 class="text-2xl font-semibold mb-3">Enterprise</h3>
+        <p class="text-xl font-bold mb-4">$79/month</p>
+        <ul class="mb-6 space-y-2 text-gray-700">
+          <li>✔ Custom sound packs</li>
+          <li>✔ Maximum pen precision</li>
+          <li>✔ Dedicated account manager</li>
+        </ul>
+        <button class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
+          Choose
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- contact  -->
+    <section id="contact" class="py-16 bg-gray-100 text-center">
+        <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-green-900">Contact Us</h2>
+        <p class="text-gray-500">GET IN TOUCH</p>
+        <form action="" class="flex flex-col items-center mt-8">
+            <input type="text" placeholder="Name" class="w-96 p-4 rounded-lg shadow-lg mb-4" required>
+            <input type="email" placeholder="Email" class="w-96 p-4 rounded-lg shadow-lg mb-4" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="w-96 p-4 rounded-lg shadow-lg mb-4" required></textarea>
+            <button class="bg-green-900 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg w-60">Send Message</button>
+        </form>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-green-300 text-white py-8 text-center">
+            <p>&copy; 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+ 
+  

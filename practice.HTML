@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button class="px-6 py-3 text-white font-semibold rounded-lg bg-gradient-to-br border-r-2 from-indigo-500 to-yellow-500 hover:shadow-lg transition-all">
+        Diagonal Gradient
+      </button>
+      <button class="relative px-6 py-3 text-white font-semibold rounded-lg transition-all hover:opacity-90 bg-[linear-gradient(to_right,#4F46E5,#EC4899)] 
+  border-2 border-transparent animate-borderChange">
+  Gradient Button
+</button>
+
+<style>
+  @keyframes borderChange {
+    0% { border-color: #4F46E5; }
+    50% { border-color: #EC4899; }
+    100% { border-color: #4F46E5; }
+  }
+  .animate-borderChange {
+    animation: borderChange 2s infinite alternate;
+  }
+</style>
+
+<button class="relative px-6 py-3 text-white font-semibold rounded-lg transition-all hover:opacity-90 
+  bg-[linear-gradient(to_right,#4F46E5,#EC4899)] border-2 border-transparent 
+  before:absolute before:inset-0 before:-m-1 before:rounded-lg before:bg-gradient-to-r before:from-purple-500 before:to-pink-500 
+  before:animate-borderGlow before:-z-10">
+  Animated Border Button
+</button>
+
+<style>
+  @keyframes borderGlow {
+    0% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0.6; transform: scale(1); }
+  }
+  .before\:animate-borderGlow::before {
+    animation: borderGlow 2s infinite alternate;
+  }
+</style>
+<button class="relative px-6 py-3 text-white font-semibold rounded-lg transition-all hover:opacity-90 
+  bg-[linear-gradient(to_right,#4F46E5,#EC4899)] border-4 border-blue-500 animate-borderCycle">
+  Animated Border Button
+</button>
+
+<style>
+  @keyframes borderCycle {
+    0% { border-color: #4F46E5; }
+    33% { border-color: #EC4899; }
+    66% { border-color: #F59E0B; }
+    100% { border-color: #4F46E5; }
+  }
+  .animate-borderCycle {
+    animation: borderCycle 3s infinite alternate;
+  }
+</style>
+<div class="flex flex-col items-center py-12 bg-gray-100">
+  <h2 class="text-3xl text-green-900 font-bold mb-8">Price of Product</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full px-4">
+    <div class="p-6 rounded-2xl shadow-lg bg-white transform transition-all duration-300 hover:scale-105 border-2 border-green-300">
+      <h3 class="text-2xl font-semibold mb-3">Basic</h3>
+      <p class="text-xl font-bold mb-4">$19/month</p>
+      <ul class="mb-6 space-y-2 text-gray-700">
+        <li>✔ Access to basic sounds</li>
+        <li>✔ Standard pen sensitivity</li>
+        <li>✔ Email support</li>
+      </ul>
+      <button class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
+        Choose 
+      </button>
+    </div>
+
+    <div class="p-6 rounded-2xl shadow-lg bg-white transform transition-all duration-300 hover:scale-105 border-2 border-green-900">
+      <div class="text-white bg-green-500 text-sm font-semibold px-3 py-1 rounded-full inline-block mb-3">
+        Most Popular
+      </div>
+      <h3 class="text-2xl font-semibold mb-3">Pro</h3>
+      <p class="text-xl font-bold mb-4">$39/month</p>
+      <ul class="mb-6 space-y-2 text-gray-700">
+        <li>✔ Full sound library</li>
+        <li>✔ Advanced pen pressure control</li>
+        <li>✔ Priority support</li>
+      </ul>
+      <button class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
+        Choose 
+      </button>
+    </div>
+
+    <div class="p-6 rounded-2xl shadow-lg bg-white transform transition-all duration-300 hover:scale-105 border-2 border-green-300">
+      <h3 class="text-2xl font-semibold mb-3">Enterprise</h3>
+      <p class="text-xl font-bold mb-4">$79/month</p>
+      <ul class="mb-6 space-y-2 text-gray-700">
+        <li>✔ Custom sound packs</li>
+        <li>✔ Maximum pen precision</li>
+        <li>✔ Dedicated account manager</li>
+      </ul>
+      <button class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
+        Choose
+      </button>
+    </div>
+  </div>
+</div>
+
+      
+</body>
+</html>
